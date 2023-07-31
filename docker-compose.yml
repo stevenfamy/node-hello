@@ -2,11 +2,8 @@ version: "3.3"
 
 services:
   node-hello:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: stevenfamygrip/node-hello:latest
+    image: stevenfamygrip/node-hello:0.0.1
     container_name: node-hello
     ports:
-      - 5081:5123
+      - 5081:3000
     restart: unless-stopped
